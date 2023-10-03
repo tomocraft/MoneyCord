@@ -1,0 +1,32 @@
+name: MoneyCord
+version: '${project.version}'
+main: si.f5.moneycord.moneycord.MainCore.MoneyCord
+api-version: 1.13
+description: A connect that Discord and Vault Plugin.
+author: Tomocraft
+authors:
+  - Tomocraft
+  - gorira
+prefix: MoneyCord
+load: STARTUP
+softdepend:
+  - Vault
+commands:
+  linking:
+    description: Generate your link code.
+    aliases:
+      - dlink
+  moneycord:
+    description: MoneyCord plugin setting command.
+permissions:
+  moneycord.commands.*:
+    description: Permission to use all MoneyCord commands.
+    children:
+      moneycord.commands.linking: true
+      moneycord.commands.moneycord: true
+  moneycord.commands.linking:
+    description: Permission to use linking command.
+    default: true
+  moneycord.commands.moneycord:
+    description: Permission to use MoneyCord settings command.
+    default: op

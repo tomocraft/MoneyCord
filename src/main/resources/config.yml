@@ -1,0 +1,197 @@
+# MoneyCord Configuration
+# Thank you for downloading this plugin.
+# You can change some settings here.
+Plugin-Enable: true
+
+# DISCORD-BOT settings
+Discord-Bot:
+
+  # Discord Bot Token
+  # Please write your Discord Bot Token here.
+  # If here is empty, this plugin will be disabled.
+  Token: 'MTE1MzM4NDcyMTQ....'
+
+  # Discord Bot Activity
+  Activity:
+
+    # Please decide your bot activity...
+    Name: 'Minecraft'
+
+    # Activity Type
+    # PLAYING, LISTENING, WATCHING, COMPETING
+    Type: 'PLAYING'
+
+  # Discord Bot Status
+  # Please decide your bot status...
+  # You can set ONLINE, IDLE, DO_NOT_DISTURB, INVISIBLE.
+  Status: 'ONLINE'
+
+  # Discord Guild ID
+  # Please write your Discord Guild ID.
+  # If you have only one guild, Please write
+  #  Guild-ID: ['0000000000000']
+  Guild-ID: ['0000000000000', '0000000000000']
+
+  # Restrict the Channel for Executing Commands
+  CommandChannelRestriction:
+
+    # if you want to Restrict the Channel for Executing Commands, please change here true.
+    Enable: false
+
+    # Discord Channel ID
+    # If there is only one channel you want to set up, write
+    #  Channel-ID: ['0000000000000']
+    Channel-ID: ['0000000000000', '0000000000000']
+
+# settings of Discord slash command
+Discord-Commands:
+
+  # Error Message Ephemeral
+  ErrorMessageEphemeral: true
+
+  # Check player information command.
+  # /info user <user>, /info mcid <mcid>
+  Player-Info:
+
+    # Command Enable
+    Enable: true
+
+    # Command Description
+    Description: 'Show information by user or MCID.'
+
+    # Message Ephemeral
+    Ephemeral: false
+
+    # Command Subcommand Settings
+    Subcommands:
+
+      # /pay user....
+      user:
+
+        # Subcommand Description
+        Description: 'Show player information by specifying user.'
+
+        # Subcommand Option Settings
+        Option:
+
+          user:
+
+            # Option Description
+            Description: 'Please enter the target user.'
+
+      # /pay mcid....
+      mcid:
+
+        # Subcommand Description
+        Description: 'Show player information by specifying MCID.'
+
+        # Subcommand Option Settings
+        Option:
+
+          mcid:
+
+            # Option Description
+            Description: 'Please enter the target MCID.'
+
+  # Check balance.
+  # /money
+  Check-Money:
+
+    # Command Enable
+    Enable: true
+
+    # Command Description
+    Description: 'Check balance.'
+
+    # Message Ephemeral
+    Ephemeral: false
+
+  # Player can pay target player money.
+  # /pay user <amount> <user>, /pay mcid <amount> <user>
+  Pay-Money:
+
+    # Command Enable
+    Enable: true
+
+    # Command Description
+    Description: 'Pay money to player.'
+
+    # Message Ephemeral
+    Ephemeral: false
+
+    # Command Subcommand Settings
+    Subcommands:
+
+      # /pay user....
+      user:
+
+        # Subcommand Description
+        Description: 'Pay money to player by specifying user.'
+
+        # Subcommand Options Settings
+        Options:
+
+          amount:
+
+            # Option Description
+            Description: 'Please enter the amount to pay.'
+
+          user:
+
+            # Option Description
+            Description: 'Please enter the target user.'
+
+      # /pay mcid....
+      mcid:
+
+        # Subcommand Description
+        Description: 'Pay money to player by specifying MCID.'
+
+        # Subcommand Options Settings
+        Options:
+
+          amount:
+
+            # Option Description
+            Description: 'Please enter the amount to pay.'
+
+          mcid:
+
+            # Option Description
+            Description: 'Please enter the target MCID.'
+
+  # Players can link their own Discord account with their Minecraft account.
+  # /linking <code>, /mlink <code>
+  Account-Link:
+
+    # Command Enable
+    Enable: true
+
+    # Command Description
+    Description: 'Link your Minecraft account.'
+
+    # Message Ephemeral
+    Ephemeral: false
+
+    # Command Options Settings
+    Option:
+
+      code:
+
+        # Option Description
+        Description: 'Please enter your Minecraft link code.'
+
+# settings of Minecraft slash command
+Minecraft-Commands:
+
+  # Players can check theirs link code by running /link in Minecraft.
+  # /link
+  Account-Link:
+
+    # Command Enable
+    Enable: true
+
+  # /moneycord
+  MoneyCord:
+
+    Enable: true

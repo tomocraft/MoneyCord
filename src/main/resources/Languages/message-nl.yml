@@ -1,0 +1,166 @@
+# Dutch
+Messages:
+
+  # Console
+  didNotFindVault: 'Er is geen Vault-plugin gevonden, dus deze plugin wordt uitgeschakeld.'
+
+  # Minecraft
+  doNotHavePermission: '&cJe hebt geen toestemming om deze opdracht uit te voeren.'
+  generatedCode: '&aJouw code is {code}.'
+  commandExecutorIsNotPlayer: '&cDeze opdracht kan alleen worden uitgevoerd door een speler.'
+  commandIsDisabled: '&cDeze opdracht is uitgeschakeld.'
+  linkedAccountOnMinecraft: '&cUw account is al gekoppeld.'
+  paidByDiscordUser: '&aJe hebt {amount} ontvangen van {discordUserDisplayName}({discordUserName}).'
+  reload: '&eMoneyCord opnieuw laden...'
+  successReload: '&aHerladen voltooid!'
+  disablePlugin: '&cMoneyCord wordt uitgeschakeld...'
+  argumentIsInvalid: '&cHet argument is ongeldig.'
+  unknownDiscordUser: '&cOnbekende Discord-gebruiker.'
+  unknownMinecraftPlayer: '&cOnbekende Minecraft-speler.'
+  additionBlacklistCompleted: '&aToevoegen aan zwarte lijst voltooid!'
+  removalBlacklistCompleted: '&aVerwijderen uit zwarte lijst voltooid!'
+  deletionLinkedCompleted: '&aVerwijderen van gekoppelde account is voltooid!'
+  blacklistedPlayer: '&cJe staat op de zwarte lijst!'
+  linkingWasCompleted: '&aKoppelen voltooid!'
+
+  # Minecraft-berichten kunnen kleurcodes gebruiken.
+  # Kleurcodes
+  # &0 - zwart
+  # &1 - donkerblauw
+  # &2 - donkergroen
+  # &3 - donkeraqua
+  # &4 - donkerrood
+  # &5 - donkerpaars
+  # &6 - goud
+  # &7 - grijs
+  # &8 - donkergrijs
+  # &9 - blauw
+  # &a - groen
+  # &b - aqua
+  # &c - rood
+  # &d - lichtpaars
+  # &e - geel
+  # &f - wit
+  # &r - herstellen
+  # Stijlcodes
+  # &k - magie
+  # &l - dikgedrukt
+  # &m - doorgestreept
+  # &n - onderstreept
+  # &o - cursief
+  # &r - herstellen
+
+  # Discord
+  didNotLinkAccount: 'Account is niet gekoppeld.'
+  cannotCheckBalance: 'Kan je saldo niet controleren.'
+  linkedAccountOnDiscord: 'Je account is gekoppeld.'
+  cannotUseCommandTheChannel: 'Je kunt deze opdracht niet in dit kanaal gebruiken.'
+  notExistCode: 'De code bestaat niet.'
+  errorDuringCommandExecution: 'Er is een fout opgetreden tijdens het uitvoeren van de opdracht.'
+  accountIsNotLinked: 'Je account is niet gekoppeld.'
+  targetAccountIsNotLinked: 'De gespecificeerde gebruiker heeft de accountkoppeling niet voltooid.'
+  playerNotFound: 'Speler niet gevonden.'
+  playerBalanceNotFound: 'Spelersaldo niet gevonden.'
+  cannotPayYourself: 'Je kunt jezelf niet betalen.'
+  moreThanBalance: 'Je kunt niet meer betalen dan je saldo.'
+  blacklistedUser: 'Je staat op de zwarte lijst!'
+  InvalidAmount: 'Geef een getal groter dan 0 op.'
+
+  # Je kunt kleurcodes gebruiken.
+  MoneyCord:
+
+    help:
+
+      description: '&6Bekijk de help'
+
+    reload:
+
+      description: '&6Herlaad de MoneyCord-plugin'
+
+    disable:
+
+      description: '&6Schakel deze plugin uit'
+
+    delete:
+
+      description: '&6Verwijder de gespecificeerde speler uit het gekoppelde account'
+
+    blacklist:
+
+      description: '&6Voeg speler toe aan de zwarte lijst of verwijder speler uit de zwarte lijst'
+
+    language:
+
+      description: '&6Stel plugintaal in'
+
+  MoneyCommand:
+
+    # Geef aan in RGB-indeling.
+    Color: '253,255,147'
+
+    # Je kunt {MinecraftName}, {userName} en {userDisplayName} gebruiken.
+    Title: 'Saldo van {userDisplayName}'
+
+    # Je kunt {MinecraftName}, {userName}, {userDisplayName}, {balance} en {user} gebruiken.
+    Description: 'Saldo van {user}: **{balance}**'
+
+  LinkCommand:
+
+    # Geef aan in RGB-indeling.
+    Color: '159,255,153'
+
+    Title: '｜✔｜Koppeling voltooid｜✔｜'
+
+    # Je kunt {MinecraftName}, {userName}, {userDisplayName} en {user} gebruiken.
+    Description: '{user} is gekoppeld aan **{MinecraftName}**.'
+
+  PayCommand:
+
+    # Geef aan in RGB-indeling.
+    Color: '184,255,200'
+
+    Title: '｜✔｜Betaling voltooid｜✔｜'
+
+    # /pay mcid <bedrag> <mcid>
+    # Je kunt {MinecraftName}, {targetMinecraftName}, {amount}, {user}, {userName} en {userDisplayName} gebruiken.
+    Description-MCID: 'Je hebt **{amount}** betaald aan **{targetMinecraftName}**.'
+
+    # /pay user <bedrag> <user>
+    # Je kunt {MinecraftName}, {targetMinecraftName}, {amount}, {user}, {userName}, {userDisplayName}, {targetUser}, {targetUserName} en {targetUserDisplayName} gebruiken.
+    Description-User: 'Je hebt **{amount}** betaald aan **{targetUser}**.'
+
+  InfoCommand:
+
+    # Geef aan in RGB-indeling.
+    Color: '184,249,255'
+
+    # Je kunt {userName} en {userDisplayName} gebruiken.
+    Title-User: '{userDisplayName} ({userName})'
+
+    Field-LinkedAccount-User:
+
+      Name: 'Gekoppeld account'
+
+      # Je kunt {user}, {userName}, {userDisplayName} en {MinecraftName} gebruiken.
+      Value: '**{MinecraftName}**'
+
+    # Je kunt {MinecraftName} gebruiken.
+    Title-MCID: '{MinecraftName}'
+
+    Field-LinkedAccount-MCID:
+
+      Name: 'Gekoppeld account'
+
+      # Je kunt {user}, {userName}, {userDisplayName} en {MinecraftName} gebruiken.
+      Value: '{user}'
+
+      Value-NotFoundLinkedAccount: 'Account is niet gekoppeld.'
+
+    Field-Balance:
+
+      Name: 'Saldo'
+
+      # Je kunt {MinecraftName} en {balance} gebruiken.
+      Value: '```{balance}```'
+
+      Value-NotFoundBalance: 'Spelersaldo niet gevonden.'

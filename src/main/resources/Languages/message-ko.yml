@@ -1,0 +1,166 @@
+# Korean
+Messages:
+
+  # 콘솔
+  didNotFindVault: 'Vault 플러그인을 찾을 수 없어 이 플러그인이 비활성화됩니다.'
+
+  # 마인크래프트
+  doNotHavePermission: '&c이 명령을 사용할 권한이 없습니다.'
+  generatedCode: '&a당신의 코드는 {code}입니다.'
+  commandExecutorIsNotPlayer: '&c이 명령은 플레이어만 실행할 수 있습니다.'
+  commandIsDisabled: '&c이 명령은 비활성화되었습니다.'
+  linkedAccountOnMinecraft: '&c이미 계정이 연결되었습니다.'
+  paidByDiscordUser: '&a{discordUserDisplayName}({discordUserName})님으로부터 {amount}을(를) 받았습니다.'
+  reload: '&eMoneyCord 다시 로드 중...'
+  successReload: '&a로드 완료!'
+  disablePlugin: '&cMoneyCord를 비활성화합니다...'
+  argumentIsInvalid: '&c인수가 잘못되었습니다.'
+  unknownDiscordUser: '&c알 수 없는 Discord 사용자입니다.'
+  unknownMinecraftPlayer: '&c알 수 없는 마인크래프트 플레이어입니다.'
+  additionBlacklistCompleted: '&a블랙리스트 추가 완료!'
+  removalBlacklistCompleted: '&a블랙리스트에서 제거 완료!'
+  deletionLinkedCompleted: '&a연결된 계정 삭제 완료!'
+  blacklistedPlayer: '&c블랙리스트에 등록되어 있습니다!'
+  linkingWasCompleted: '&a연결 완료!'
+
+  # 마인크래프트 메시지에서 색 코드 사용 가능
+  # 색 코드
+  # &0 - 검정
+  # &1 - 어두운 파랑
+  # &2 - 어두운 초록
+  # &3 - 어두운 청록
+  # &4 - 어두운 빨강
+  # &5 - 어두운 자주
+  # &6 - 금색
+  # &7 - 회색
+  # &8 - 어두운 회색
+  # &9 - 파랑
+  # &a - 초록
+  # &b - 청록
+  # &c - 빨강
+  # &d - 밝은 자주
+  # &e - 노랑
+  # &f - 흰색
+  # &r - 리셋
+  # 스타일 코드
+  # &k - 마법
+  # &l - 굵게
+  # &m - 가로줄
+  # &n - 밑줄
+  # &o - 이탤릭
+  # &r - 리셋
+
+  # 디스코드
+  didNotLinkAccount: '계정이 연결되지 않았습니다.'
+  cannotCheckBalance: '잔액을 확인할 수 없습니다.'
+  linkedAccountOnDiscord: '계정이 연결되었습니다.'
+  cannotUseCommandTheChannel: '이 채널에서 명령을 사용할 수 없습니다.'
+  notExistCode: '코드가 존재하지 않습니다.'
+  errorDuringCommandExecution: '명령 실행 중 오류가 발생했습니다.'
+  accountIsNotLinked: '계정이 연결되지 않았습니다.'
+  targetAccountIsNotLinked: '지정된 사용자가 계정 연결을 완료하지 않았습니다.'
+  playerNotFound: '플레이어를 찾을 수 없습니다.'
+  playerBalanceNotFound: '플레이어 잔액을 찾을 수 없습니다.'
+  cannotPayYourself: '자신에게 지불할 수 없습니다.'
+  moreThanBalance: '잔액보다 많이 지불할 수 없습니다.'
+  blacklistedUser: '블랙리스트에 등록되어 있습니다!'
+  InvalidAmount: '0보다 큰 숫자를 지정해주세요.'
+
+  # 색 코드 사용 가능
+  MoneyCord:
+
+    help:
+
+      description: '&6도움말 확인'
+
+    reload:
+
+      description: '&6MoneyCord 플러그인 다시 로드'
+
+    disable:
+
+      description: '&6이 플러그인 비활성화'
+
+    delete:
+
+      description: '&6지정한 플레이어를 연결된 계정에서 제거'
+
+    blacklist:
+
+      description: '&6플레이어를 블랙리스트에 추가 또는 블랙리스트에서 제거'
+
+    language:
+
+      description: '&6플러그인 언어 설정'
+
+  MoneyCommand:
+
+    # RGB 코드 형식으로 지정하세요.
+    Color: '253,255,147'
+
+    # {MinecraftName}, {userName}, {userDisplayName}을 사용할 수 있습니다.
+    Title: '{userDisplayName}님의 잔액'
+
+    # {MinecraftName}, {userName}, {userDisplayName}, {balance}, {user}를 사용할 수 있습니다.
+    Description: '{user}님의 잔액: **{balance}**'
+
+  LinkCommand:
+
+    # RGB 코드 형식으로 지정하세요.
+    Color: '159,255,153'
+
+    Title: '｜✔｜연결 완료｜✔｜'
+
+    # {MinecraftName}, {userName}, {userDisplayName}, {user}을 사용할 수 있습니다.
+    Description: '{user}님이 **{MinecraftName}**과(와) 연결되었습니다.'
+
+  PayCommand:
+
+    # RGB 코드 형식으로 지정하세요.
+    Color: '184,255,200'
+
+    Title: '｜✔｜지불 완료｜✔｜'
+
+    # /pay mcid <금액> <mcid>
+    # {MinecraftName}, {targetMinecraftName}, {amount}, {user}, {userName}, {userDisplayName}을 사용할 수 있습니다.
+    Description-MCID: '당신은 **{amount}**을(를) **{targetMinecraftName}**에게 지불했습니다.'
+
+    # /pay user <금액> <user>
+    # {MinecraftName}, {targetMinecraftName}, {amount}, {user}, {userName}, {userDisplayName}, {targetUser}, {targetUserName}, {targetUserDisplayName}을 사용할 수 있습니다.
+    Description-User: '당신은 **{amount}**을(를) **{targetUser}**에게 지불했습니다.'
+
+  InfoCommand:
+
+    # RGB 코드 형식으로 지정하세요.
+    Color: '184,249,255'
+
+    # {userName}, {userDisplayName}을 사용할 수 있습니다.
+    Title-User: '{userDisplayName}({userName})'
+
+    Field-LinkedAccount-User:
+
+      Name: '연결된 계정'
+
+      # {user}, {userName}, {userDisplayName}, {MinecraftName}을 사용할 수 있습니다.
+      Value: '**{MinecraftName}**'
+
+    # {MinecraftName}을 사용할 수 있습니다.
+    Title-MCID: '{MinecraftName}'
+
+    Field-LinkedAccount-MCID:
+
+      Name: '연결된 계정'
+
+      # {user}, {userName}, {userDisplayName}, {MinecraftName}을 사용할 수 있습니다.
+      Value: '{user}'
+
+      Value-NotFoundLinkedAccount: '계정이 연결되지 않았습니다.'
+
+    Field-Balance:
+
+      Name: '잔액'
+
+      # {MinecraftName}, {balance}을 사용할 수 있습니다.
+      Value: '```{balance}```'
+
+      Value-NotFoundBalance: '잔액을 찾을 수 없습니다.'

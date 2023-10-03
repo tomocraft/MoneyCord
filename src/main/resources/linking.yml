@@ -1,0 +1,7 @@
+LinkedDataUserToUuid:
+
+LinkedDataUuidToUser:
+
+Blacklist:
+
+  # [UUID|UserID]: [PlayerName|UserName] + Reason

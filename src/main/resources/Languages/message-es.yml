@@ -1,0 +1,166 @@
+# Spanish
+Messages:
+
+  # Consola
+  didNotFindVault: 'No se encontró el complemento de Vault, por lo que este complemento se desactivará.'
+
+  # Minecraft
+  doNotHavePermission: '&cNo tienes permiso para usar este comando.'
+  generatedCode: '&aTu código es {code}.'
+  commandExecutorIsNotPlayer: '&cEste comando solo puede ser ejecutado por un jugador.'
+  commandIsDisabled: '&cEste comando está desactivado.'
+  linkedAccountOnMinecraft: '&cTu cuenta ya está vinculada.'
+  paidByDiscordUser: '&aRecibiste {amount} de {discordUserDisplayName}({discordUserName}).'
+  reload: '&eRecargando MoneyCord...'
+  successReload: '&aRecarga completada.'
+  disablePlugin: '&cMoneyCord será desactivado...'
+  argumentIsInvalid: '&cEl argumento no es válido.'
+  unknownDiscordUser: '&cUsuario de Discord desconocido.'
+  unknownMinecraftPlayer: '&cJugador de Minecraft desconocido.'
+  additionBlacklistCompleted: '&aSe añadió a la lista negra correctamente.'
+  removalBlacklistCompleted: '&aSe eliminó de la lista negra correctamente.'
+  deletionLinkedCompleted: '&aLa eliminación de la cuenta vinculada se ha completado.'
+  blacklistedPlayer: '&cEstás en la lista negra.'
+  linkingWasCompleted: '&aVinculación completada.'
+
+  # Los mensajes de Minecraft pueden utilizar códigos de color.
+  # Códigos de Color
+  # &0 - negro
+  # &1 - azul oscuro
+  # &2 - verde oscuro
+  # &3 - cian oscuro
+  # &4 - rojo oscuro
+  # &5 - morado oscuro
+  # &6 - dorado
+  # &7 - gris
+  # &8 - gris oscuro
+  # &9 - azul
+  # &a - verde
+  # &b - cian
+  # &c - rojo
+  # &d - morado claro
+  # &e - amarillo
+  # &f - blanco
+  # &r - restablecer
+  # Códigos de Estilo
+  # &k - mágico
+  # &l - negrita
+  # &m - tachado
+  # &n - subrayado
+  # &o - cursiva
+  # &r - restablecer
+
+  # Discord
+  didNotLinkAccount: 'La cuenta no está vinculada.'
+  cannotCheckBalance: 'No se pudo comprobar tu saldo.'
+  linkedAccountOnDiscord: 'Tu cuenta ha sido vinculada.'
+  cannotUseCommandTheChannel: 'No puedes usar este comando en este canal.'
+  notExistCode: 'El código no existe.'
+  errorDuringCommandExecution: 'Se produjo un error al ejecutar el comando.'
+  accountIsNotLinked: 'Tu cuenta no está vinculada.'
+  targetAccountIsNotLinked: 'El usuario especificado no ha completado la vinculación de la cuenta.'
+  playerNotFound: 'Jugador no encontrado.'
+  playerBalanceNotFound: 'Saldo del jugador no encontrado.'
+  cannotPayYourself: 'No puedes pagarte a ti mismo.'
+  moreThanBalance: 'No puedes pagar más de lo que tienes en saldo.'
+  blacklistedUser: '¡Estás en la lista negra!'
+  InvalidAmount: 'Por favor, especifique un número mayor que 0.'
+
+  # Puedes usar Códigos de Color.
+  MoneyCord:
+
+    help:
+
+      description: '&6Ver ayuda'
+
+    reload:
+
+      description: '&6Recargar el complemento MoneyCord'
+
+    disable:
+
+      description: '&6Desactivar este complemento'
+
+    delete:
+
+      description: '&6Eliminar al jugador especificado de la cuenta vinculada'
+
+    blacklist:
+
+      description: '&6Agregar jugador a la lista negra o quitar jugador de la lista negra'
+
+    language:
+
+      description: '&6Establecer el idioma del complemento'
+
+  MoneyCommand:
+
+    # Por favor, escríbelo en formato de código RGB.
+    Color: '253,255,147'
+
+    # Puedes usar {MinecraftName}, {userName} y {userDisplayName}.
+    Title: 'Saldo de {userDisplayName}'
+
+    # Puedes usar {MinecraftName}, {userName}, {userDisplayName}, {balance} y {user}.
+    Description: 'Saldo de {user}: **{balance}**'
+
+  LinkCommand:
+
+    # Por favor, escríbelo en formato de código RGB.
+    Color: '159,255,153'
+
+    Title: '｜✔｜Vinculación Completada｜✔｜'
+
+    # Puedes usar {MinecraftName}, {userName}, {userDisplayName} y {user}.
+    Description: '{user} fue vinculado con **{MinecraftName}**.'
+
+  PayCommand:
+
+    # Por favor, escríbelo en formato de código RGB.
+    Color: '184,255,200'
+
+    Title: '｜✔｜Pago Completado｜✔｜'
+
+    # /pay mcid <cantidad> <mcid>
+    # Puedes usar {MinecraftName}, {targetMinecraftName}, {amount}, {user}, {userName} y {userDisplayName}.
+    Description-MCID: 'Pagaste **{amount}** a **{targetMinecraftName}**.'
+
+    # /pay user <cantidad> <usuario>
+    # Puedes usar {MinecraftName}, {targetMinecraftName}, {amount}, {user}, {userName}, {userDisplayName}, {targetUser}, {targetUserName} y {targetUserDisplayName}.
+    Description-User: 'Pagaste **{amount}** a **{targetUser}**'
+
+  InfoCommand:
+
+    # Por favor, escríbelo en formato de código RGB.
+    Color: '184,249,255'
+
+    # Puedes usar {userName} y {userDisplayName}.
+    Title-User: '{userDisplayName}({userName})'
+
+    Field-LinkedAccount-User:
+
+      Name: 'Cuenta Vinculada'
+
+      # Puedes usar {user}, {userName}, {userDisplayName} y {MinecraftName}.
+      Value: '**{MinecraftName}**'
+
+    # Puedes usar {MinecraftName}.
+    Title-MCID: '{MinecraftName}'
+
+    Field-LinkedAccount-MCID:
+
+      Name: 'Cuenta Vinculada'
+
+      # Puedes usar {user}, {userName}, {userDisplayName} y {MinecraftName}.
+      Value: '{user}'
+
+      Value-NotFoundLinkedAccount: 'La cuenta no está vinculada.'
+
+    Field-Balance:
+
+      Name: 'Saldo'
+
+      # Puedes usar {MinecraftName} y {balance}.
+      Value: '```{balance}```'
+
+      Value-NotFoundBalance: 'Saldo no encontrado.'

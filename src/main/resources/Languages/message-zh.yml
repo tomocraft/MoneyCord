@@ -1,0 +1,166 @@
+# Simplified Chinese
+Messages:
+
+  # 控制台
+  didNotFindVault: '找不到Vault插件，因此将禁用此插件。'
+
+  # Minecraft
+  doNotHavePermission: '&c您没有使用此命令的权限。'
+  generatedCode: '&a您的代码是{code}。'
+  commandExecutorIsNotPlayer: '&c此命令仅可由玩家执行。'
+  commandIsDisabled: '&c此命令已禁用。'
+  linkedAccountOnMinecraft: '&c您的帐户已经链接。'
+  paidByDiscordUser: '&a您收到了{discordUserDisplayName}({discordUserName})的{amount}。'
+  reload: '&e重新加载MoneyCord...'
+  successReload: '&a重新加载完成！'
+  disablePlugin: '&cMoneyCord将被禁用...'
+  argumentIsInvalid: '&c参数无效。'
+  unknownDiscordUser: '&c未知的Discord用户。'
+  unknownMinecraftPlayer: '&c未知的Minecraft玩家。'
+  additionBlacklistCompleted: '&a添加到黑名单完成！'
+  removalBlacklistCompleted: '&a从黑名单中移除完成！'
+  deletionLinkedCompleted: '&a删除关联帐户完成！'
+  blacklistedPlayer: '&c您在黑名单上！'
+  linkingWasCompleted: '&a关联完成！'
+
+  # Minecraft消息可以使用颜色代码。
+  # 颜色代码
+  # &0 - 黑色
+  # &1 - 深蓝色
+  # &2 - 深绿色
+  # &3 - 深青色
+  # &4 - 深红色
+  # &5 - 深紫色
+  # &6 - 金色
+  # &7 - 灰色
+  # &8 - 深灰色
+  # &9 - 蓝色
+  # &a - 绿色
+  # &b - 青色
+  # &c - 红色
+  # &d - 浅紫色
+  # &e - 黄色
+  # &f - 白色
+  # &r - 重置
+  # 样式代码
+  # &k - 魔法
+  # &l - 粗体
+  # &m - 删除线
+  # &n - 下划线
+  # &o - 斜体
+  # &r - 重置
+
+  # Discord
+  didNotLinkAccount: '帐户未关联。'
+  cannotCheckBalance: '无法检查您的余额。'
+  linkedAccountOnDiscord: '您的帐户已关联。'
+  cannotUseCommandTheChannel: '您不能在此频道中使用该命令。'
+  notExistCode: '代码不存在。'
+  errorDuringCommandExecution: '执行命令时发生错误。'
+  accountIsNotLinked: '您的帐户未关联。'
+  targetAccountIsNotLinked: '指定的用户尚未完成帐户关联。'
+  playerNotFound: '未找到玩家。'
+  playerBalanceNotFound: '未找到玩家余额。'
+  cannotPayYourself: '您不能支付自己。'
+  moreThanBalance: '您不能支付超过余额的金额。'
+  blacklistedUser: '您在黑名单上！'
+  InvalidAmount: '请指定一个大于0的数字。'
+
+  # 您可以使用颜色代码。
+  MoneyCord:
+
+    help:
+
+      description: '&6查看帮助'
+
+    reload:
+
+      description: '&6重新加载MoneyCord插件'
+
+    disable:
+
+      description: '&6禁用此插件'
+
+    delete:
+
+      description: '&6从关联帐户中删除指定玩家'
+
+    blacklist:
+
+      description: '&6将玩家添加到黑名单或从黑名单中移除玩家'
+
+    language:
+
+      description: '&6设置插件语言'
+
+  MoneyCommand:
+
+    # 请使用RGB格式指定。
+    Color: '253,255,147'
+
+    # 您可以使用{MinecraftName}、{userName}和{userDisplayName}。
+    Title: '{userDisplayName}的余额'
+
+    # 您可以使用{MinecraftName}、{userName}、{userDisplayName}、{balance}和{user}。
+    Description: '{user}的余额：**{balance}**'
+
+  LinkCommand:
+
+    # 请使用RGB格式指定。
+    Color: '159,255,153'
+
+    Title: '｜✔｜关联完成｜✔｜'
+
+    # 您可以使用{MinecraftName}、{userName}、{userDisplayName}和{user}。
+    Description: '{user}已关联到**{MinecraftName}**。'
+
+  PayCommand:
+
+    # 请使用RGB格式指定。
+    Color: '184,255,200'
+
+    Title: '｜✔｜付款完成｜✔｜'
+
+    # /pay mcid <金额> <mcid>
+    # 您可以使用{MinecraftName}、{targetMinecraftName}、{amount}、{user}、{userName}和{userDisplayName}。
+    Description-MCID: '您已支付**{amount}**给**{targetMinecraftName}**。'
+
+    # /pay user <金额> <user>
+    # 您可以使用{MinecraftName}、{targetMinecraftName}、{amount}、{user}、{userName}、{userDisplayName}、{targetUser}、{targetUserName}和{targetUserDisplayName}。
+    Description-User: '您已支付**{amount}**给**{targetUser}**。'
+
+  InfoCommand:
+
+    # 请使用RGB格式指定。
+    Color: '184,249,255'
+
+    # 您可以使用{userName}和{userDisplayName}。
+    Title-User: '{userDisplayName} ({userName})'
+
+    Field-LinkedAccount-User:
+
+      Name: '关联帐户'
+
+      # 您可以使用{user}、{userName}、{userDisplayName}和{MinecraftName}。
+      Value: '**{MinecraftName}**'
+
+    # 您可以使用{MinecraftName}。
+    Title-MCID: '{MinecraftName}'
+
+    Field-LinkedAccount-MCID:
+
+      Name: '关联帐户'
+
+      # 您可以使用{user}、{userName}、{userDisplayName}和{MinecraftName}。
+      Value: '{user}'
+
+      Value-NotFoundLinkedAccount: '帐户未关联。'
+
+    Field-Balance:
+
+      Name: '余额'
+
+      # 您可以使用{MinecraftName}和{balance}。
+      Value: '```{balance}```'
+
+      Value-NotFoundBalance: '未找到玩家余额。'

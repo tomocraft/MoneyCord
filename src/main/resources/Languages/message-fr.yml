@@ -1,0 +1,166 @@
+# French
+Messages:
+
+  # Console
+  didNotFindVault: 'Aucun plugin Vault n''a été trouvé, donc ce plugin sera désactivé.'
+
+  # Minecraft
+  doNotHavePermission: '&cVous n''avez pas la permission d''utiliser cette commande.'
+  generatedCode: '&aVotre code est {code}.'
+  commandExecutorIsNotPlayer: '&cCette commande ne peut être exécutée que par un joueur.'
+  commandIsDisabled: '&cCette commande est désactivée.'
+  linkedAccountOnMinecraft: '&cVotre compte est déjà lié.'
+  paidByDiscordUser: '&aVous avez reçu {amount} de {discordUserDisplayName}({discordUserName}).'
+  reload: '&eRechargement de MoneyCord...'
+  successReload: '&aRechargement terminé !'
+  disablePlugin: '&cMoneyCord sera désactivé...'
+  argumentIsInvalid: '&cL''argument est invalide.'
+  unknownDiscordUser: '&cUtilisateur Discord inconnu.'
+  unknownMinecraftPlayer: '&cJoueur Minecraft inconnu.'
+  additionBlacklistCompleted: '&aAjout à la liste noire terminé !'
+  removalBlacklistCompleted: '&aSuppression de la liste noire terminée !'
+  deletionLinkedCompleted: '&aLa suppression du compte lié est terminée !'
+  blacklistedPlayer: '&cVous êtes sur liste noire !'
+  linkingWasCompleted: '&aLiaison terminée !'
+
+  # Les messages Minecraft peuvent utiliser des codes de couleur.
+  # Codes de Couleur
+  # &0 - noir
+  # &1 - bleu foncé
+  # &2 - vert foncé
+  # &3 - cyan foncé
+  # &4 - rouge foncé
+  # &5 - violet foncé
+  # &6 - doré
+  # &7 - gris
+  # &8 - gris foncé
+  # &9 - bleu
+  # &a - vert
+  # &b - cyan
+  # &c - rouge
+  # &d - violet clair
+  # &e - jaune
+  # &f - blanc
+  # &r - réinitialisation
+  # Codes de Style
+  # &k - magique
+  # &l - gras
+  # &m - barré
+  # &n - souligné
+  # &o - italique
+  # &r - réinitialisation
+
+  # Discord
+  didNotLinkAccount: 'Le compte n''est pas lié.'
+  cannotCheckBalance: 'Impossible de vérifier votre solde.'
+  linkedAccountOnDiscord: 'Votre compte a été lié.'
+  cannotUseCommandTheChannel: 'Vous ne pouvez pas utiliser cette commande dans ce canal.'
+  notExistCode: 'Le code n''existe pas.'
+  errorDuringCommandExecution: 'Une erreur s''est produite lors de l''exécution de la commande.'
+  accountIsNotLinked: 'Votre compte n''est pas lié.'
+  targetAccountIsNotLinked: 'L''utilisateur spécifié n''a pas complété la liaison du compte.'
+  playerNotFound: 'Joueur introuvable.'
+  playerBalanceNotFound: 'Solde du joueur introuvable.'
+  cannotPayYourself: 'Vous ne pouvez pas vous payer vous-même.'
+  moreThanBalance: 'Vous ne pouvez pas payer plus que le solde.'
+  blacklistedUser: 'Vous êtes sur liste noire !'
+  InvalidAmount: 'Veuillez spécifier un nombre supérieur à 0.'
+
+  # Vous pouvez utiliser des Codes de Couleur.
+  MoneyCord:
+
+    help:
+
+      description: '&6Voir l''aide'
+
+    reload:
+
+      description: '&6Recharger le plugin MoneyCord'
+
+    disable:
+
+      description: '&6Désactiver ce plugin'
+
+    delete:
+
+      description: '&6Supprimer le joueur spécifié du compte lié'
+
+    blacklist:
+
+      description: '&6Ajouter le joueur à la liste noire ou le retirer de la liste noire'
+
+    language:
+
+      description: '&6Définir la langue du plugin'
+
+  MoneyCommand:
+
+    # Veuillez spécifier en format de code RVB.
+    Color: '253,255,147'
+
+    # Vous pouvez utiliser {MinecraftName}, {userName} et {userDisplayName}.
+    Title: 'Solde de {userDisplayName}'
+
+    # Vous pouvez utiliser {MinecraftName}, {userName}, {userDisplayName}, {balance} et {user}.
+    Description: 'Solde de {user} : **{balance}**'
+
+  LinkCommand:
+
+    # Veuillez spécifier en format de code RVB.
+    Color: '159,255,153'
+
+    Title: '｜✔｜Liaison terminée｜✔｜'
+
+    # Vous pouvez utiliser {MinecraftName}, {userName}, {userDisplayName} et {user}.
+    Description: '{user} a été lié à **{MinecraftName}**.'
+
+  PayCommand:
+
+    # Veuillez spécifier en format de code RVB.
+    Color: '184,255,200'
+
+    Title: '｜✔｜Paiement terminé｜✔｜'
+
+    # /pay mcid <montant> <mcid>
+    # Vous pouvez utiliser {MinecraftName}, {targetMinecraftName}, {amount}, {user}, {userName} et {userDisplayName}.
+    Description-MCID: 'Vous avez payé **{amount}** à **{targetMinecraftName}**.'
+
+    # /pay user <montant> <utilisateur>
+    # Vous pouvez utiliser {MinecraftName}, {targetMinecraftName}, {amount}, {user}, {userName}, {userDisplayName}, {targetUser}, {targetUserName} et {targetUserDisplayName}.
+    Description-User: 'Vous avez payé **{amount}** à **{targetUser}**.'
+
+  InfoCommand:
+
+    # Veuillez spécifier en format de code RVB.
+    Color: '184,249,255'
+
+    # Vous pouvez utiliser {userName} et {userDisplayName}.
+    Title-User: '{userDisplayName} ({userName})'
+
+    Field-LinkedAccount-User:
+
+      Name: 'Compte lié'
+
+      # Vous pouvez utiliser {user}, {userName}, {userDisplayName} et {MinecraftName}.
+      Value: '**{MinecraftName}**'
+
+    # Vous pouvez utiliser {MinecraftName}.
+    Title-MCID: '{MinecraftName}'
+
+    Field-LinkedAccount-MCID:
+
+      Name: 'Compte lié'
+
+      # Vous pouvez utiliser {user}, {userName}, {userDisplayName} et {MinecraftName}.
+      Value: '{user}'
+
+      Value-NotFoundLinkedAccount: 'Le compte n''est pas lié.'
+
+    Field-Balance:
+
+      Name: 'Solde'
+
+      # Vous pouvez utiliser {MinecraftName} et {balance}.
+      Value: '```{balance}```'
+
+      Value-NotFoundBalance: 'Solde introuvable.'

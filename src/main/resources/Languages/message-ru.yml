@@ -1,0 +1,166 @@
+# Russian
+Messages:
+
+  # Консоль
+  didNotFindVault: 'Плагин Vault не найден, поэтому этот плагин будет отключен.'
+
+  # Minecraft
+  doNotHavePermission: '&cУ вас нет разрешения на использование этой команды.'
+  generatedCode: '&aВаш код: {code}.'
+  commandExecutorIsNotPlayer: '&cЭта команда может быть выполнена только игроком.'
+  commandIsDisabled: '&cЭта команда отключена.'
+  linkedAccountOnMinecraft: '&cВаш аккаунт уже связан.'
+  paidByDiscordUser: '&aВы получили {amount} от {discordUserDisplayName} ({discordUserName}).'
+  reload: '&eПерезагрузка MoneyCord...'
+  successReload: '&aПерезагрузка завершена!'
+  disablePlugin: '&cMoneyCord будет отключен...'
+  argumentIsInvalid: '&cАргумент недействителен.'
+  unknownDiscordUser: '&cНеизвестный пользователь Discord.'
+  unknownMinecraftPlayer: '&cНеизвестный игрок Minecraft.'
+  additionBlacklistCompleted: '&aДобавление в черный список завершено!'
+  removalBlacklistCompleted: '&aУдаление из черного списка завершено!'
+  deletionLinkedCompleted: '&aУдаление связанного аккаунта завершено!'
+  blacklistedPlayer: '&cВы в черном списке!'
+  linkingWasCompleted: '&aСвязывание завершено!'
+
+  # Сообщения Minecraft могут использовать цветовые коды.
+  # Цветовые коды
+  # &0 - черный
+  # &1 - темно-синий
+  # &2 - темно-зеленый
+  # &3 - темно-аквамариновый
+  # &4 - темно-красный
+  # &5 - темно-фиолетовый
+  # &6 - золотой
+  # &7 - серый
+  # &8 - темно-серый
+  # &9 - синий
+  # &a - зеленый
+  # &b - аквамариновый
+  # &c - красный
+  # &d - светло-фиолетовый
+  # &e - желтый
+  # &f - белый
+  # &r - сбросить
+  # Стиль кодов
+  # &k - магия
+  # &l - жирный
+  # &m - перечеркнутый
+  # &n - подчеркнутый
+  # &o - курсив
+  # &r - сброс
+
+  # Discord
+  didNotLinkAccount: 'Аккаунт не связан.'
+  cannotCheckBalance: 'Не удалось проверить ваш баланс.'
+  linkedAccountOnDiscord: 'Ваш аккаунт был связан.'
+  cannotUseCommandTheChannel: 'Вы не можете использовать эту команду в этом канале.'
+  notExistCode: 'Код не существует.'
+  errorDuringCommandExecution: 'Произошла ошибка при выполнении команды.'
+  accountIsNotLinked: 'Ваш аккаунт не связан.'
+  targetAccountIsNotLinked: 'Указанный пользователь не завершил связывание аккаунта.'
+  playerNotFound: 'Игрок не найден.'
+  playerBalanceNotFound: 'Баланс игрока не найден.'
+  cannotPayYourself: 'Вы не можете перевести деньги самому себе.'
+  moreThanBalance: 'Вы не можете перевести больше, чем у вас есть на балансе.'
+  blacklistedUser: 'Вы в черном списке!'
+  InvalidAmount: 'Пожалуйста, укажите число больше 0.'
+
+  # Вы можете использовать цветовые коды.
+  MoneyCord:
+
+    help:
+
+      description: '&6Посмотреть справку'
+
+    reload:
+
+      description: '&6Перезагрузить плагин MoneyCord'
+
+    disable:
+
+      description: '&6Отключить этот плагин'
+
+    delete:
+
+      description: '&6Удалить указанного игрока из связанного аккаунта'
+
+    blacklist:
+
+      description: '&6Добавить игрока в черный список или удалить игрока из черного списка'
+
+    language:
+
+      description: '&6Установить язык плагина'
+
+  MoneyCommand:
+
+    # Укажите в формате RGB кода.
+    Color: '253,255,147'
+
+    # Вы можете использовать {MinecraftName}, {userName} и {userDisplayName}.
+    Title: 'Баланс {userDisplayName}'
+
+    # Вы можете использовать {MinecraftName}, {userName}, {userDisplayName}, {balance} и {user}.
+    Description: 'Баланс {user}: **{balance}**'
+
+  LinkCommand:
+
+    # Укажите в формате RGB кода.
+    Color: '159,255,153'
+
+    Title: '｜✔｜Связывание завершено｜✔｜'
+
+    # Вы можете использовать {MinecraftName}, {userName}, {userDisplayName} и {user}.
+    Description: '{user} связан с **{MinecraftName}**.'
+
+  PayCommand:
+
+    # Укажите в формате RGB кода.
+    Color: '184,255,200'
+
+    Title: '｜✔｜Оплата завершена｜✔｜'
+
+    # /pay mcid <сумма> <mcid>
+    # Вы можете использовать {MinecraftName}, {targetMinecraftName}, {amount}, {user}, {userName} и {userDisplayName}.
+    Description-MCID: 'Вы заплатили **{amount}** для **{targetMinecraftName}**.'
+
+    # /pay user <сумма> <user>
+    # Вы можете использовать {MinecraftName}, {targetMinecraftName}, {amount}, {user}, {userName}, {userDisplayName}, {targetUser}, {targetUserName} и {targetUserDisplayName}.
+    Description-User: 'Вы заплатили **{amount}** для **{targetUser}**.'
+
+  InfoCommand:
+
+    # Укажите в формате RGB кода.
+    Color: '184,249,255'
+
+    # Вы можете использовать {userName} и {userDisplayName}.
+    Title-User: '{userDisplayName} ({userName})'
+
+    Field-LinkedAccount-User:
+
+      Name: 'Связанный аккаунт'
+
+      # Вы можете использовать {user}, {userName}, {userDisplayName} и {MinecraftName}.
+      Value: '**{MinecraftName}**'
+
+    # Вы можете использовать {MinecraftName}.
+    Title-MCID: '{MinecraftName}'
+
+    Field-LinkedAccount-MCID:
+
+      Name: 'Связанный аккаунт'
+
+      # Вы можете использовать {user}, {userName}, {userDisplayName} и {MinecraftName}.
+      Value: '{user}'
+
+      Value-NotFoundLinkedAccount: 'Аккаунт не связан.'
+
+    Field-Balance:
+
+      Name: 'Баланс'
+
+      # Вы можете использовать {MinecraftName} и {balance}.
+      Value: '```{balance}```'
+
+      Value-NotFoundBalance: 'Баланс игрока не найден.'

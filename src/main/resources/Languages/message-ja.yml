@@ -1,0 +1,166 @@
+# Japanese
+Messages:
+
+  # コンソール
+  didNotFindVault: 'Vaultプラグインが見つかりませんので、このプラグインは無効になります。'
+
+  # Minecraft
+  doNotHavePermission: '&cこのコマンドを使用する権限がありません。'
+  generatedCode: '&aコードは{code}です。'
+  commandExecutorIsNotPlayer: '&cこのコマンドはプレイヤーからのみ実行できます。'
+  commandIsDisabled: '&cこのコマンドは無効にされています。'
+  linkedAccountOnMinecraft: '&cあなたのアカウントはすでにリンクされています。'
+  paidByDiscordUser: '&a{discordUserDisplayName}({discordUserName})から{amount}を受け取りました。'
+  reload: '&eMoneyCordをリロード中...'
+  successReload: '&aリロードが完了しました！'
+  disablePlugin: '&cMoneyCordは無効になります...'
+  argumentIsInvalid: '&c引数が無効です。'
+  unknownDiscordUser: '&c不明なDiscordユーザーです。'
+  unknownMinecraftPlayer: '&c不明なMinecraftユーザーです。'
+  additionBlacklistCompleted: '&aブラックリストへの追加が完了しました！'
+  removalBlacklistCompleted: '&aブラックリストからの削除が完了しました！'
+  deletionLinkedCompleted: '&aリンクされたアカウントの削除が完了しました！'
+  blacklistedPlayer: '&cブラックリストに登録されています！'
+  linkingWasCompleted: '&aリンクが完了しました！'
+
+  # Minecraftメッセージはカラーコードを使用できます。
+  # カラーコード
+  # &0 - 黒
+  # &1 - 濃い青
+  # &2 - 濃い緑
+  # &3 - 濃い水色
+  # &4 - 濃い赤
+  # &5 - 濃い紫
+  # &6 - 金色
+  # &7 - グレー
+  # &8 - 濃い灰色
+  # &9 - 青
+  # &a - 緑
+  # &b - 水色
+  # &c - 赤
+  # &d - 明るい紫
+  # &e - 黄色
+  # &f - 白
+  # &r - リセット
+  # スタイルコード
+  # &k - マジック
+  # &l - ボールド
+  # &m - 打ち消し線
+  # &n - 下線
+  # &o - イタリック
+  # &r - リセット
+
+  # Discord
+  didNotLinkAccount: 'アカウントはリンクされていません。'
+  cannotCheckBalance: 'バランスを確認できませんでした。'
+  linkedAccountOnDiscord: 'アカウントがリンクされました。'
+  cannotUseCommandTheChannel: 'このチャンネルではコマンドを使用できません。'
+  notExistCode: 'コードが存在しません。'
+  errorDuringCommandExecution: 'コマンドの実行中にエラーが発生しました。'
+  accountIsNotLinked: 'アカウントはリンクされていません。'
+  targetAccountIsNotLinked: '指定されたユーザーはアカウントリンクを完了していません。'
+  playerNotFound: 'プレイヤーが見つかりません。'
+  playerBalanceNotFound: 'プレイヤーバランスが見つかりません。'
+  cannotPayYourself: '自分に支払うことはできません。'
+  moreThanBalance: '残高を超えて支払うことはできません。'
+  blacklistedUser: 'あなたはブラックリストに登録されています！'
+  InvalidAmount: '0より大きい数で指定してください。'
+
+  # カラーコードを使用できます。
+  MoneyCord:
+
+    help:
+
+      description: '&6ヘルプを表示'
+
+    reload:
+
+      description: '&6MoneyCordプラグインをリロード'
+
+    disable:
+
+      description: '&6このプラグインを無効にする'
+
+    delete:
+
+      description: '&6リンクされたアカウントから指定したプレイヤーを削除'
+
+    blacklist:
+
+      description: '&6プレイヤーをブラックリストに追加またはブラックリストから削除'
+
+    language:
+
+      description: '&6プラグインの言語を設定する'
+
+  MoneyCommand:
+
+    # RGBコード形式で記入してください。
+    Color: '253,255,147'
+
+    # {MinecraftName}、{userName}、{userDisplayName}を使用できます。
+    Title: '{userDisplayName}の残高'
+
+    # {MinecraftName}、{userName}、{userDisplayName}、{balance}、{user}を使用できます。
+    Description: '{user}の残高: **{balance}**'
+
+  LinkCommand:
+
+    # RGBコード形式で記入してください。
+    Color: '159,255,153'
+
+    Title: '｜✔｜リンクが完了しました｜✔｜'
+
+    # {MinecraftName}、{userName}、{userDisplayName}、{user}を使用できます。
+    Description: '{user}が**{MinecraftName}**とリンクされました。'
+
+  PayCommand:
+
+    # RGBコード形式で記入してください。
+    Color: '184,255,200'
+
+    Title: '｜✔｜支払いが完了しました｜✔｜'
+
+    # /pay mcid <amount> <mcid>
+    # {MinecraftName}、{targetMinecraftName}、{amount}、{user}、{userName}、{userDisplayName}を使用できます。
+    Description-MCID: '**{amount}**を**{targetMinecraftName}**に支払いました。'
+
+    # /pay user <amount> <user>
+    # {MinecraftName}、{targetMinecraftName}、{amount}、{user}、{userName}、{userDisplayName}、{targetUser}、{targetUserName}、{targetUserDisplayName}を使用できます。
+    Description-User: '**{amount}**を**{targetUser}**に支払いました。'
+
+  InfoCommand:
+
+    # RGBコード形式で記入してください。
+    Color: '184,249,255'
+
+    # {userName}、{userDisplayName}を使用できます。
+    Title-User: '{userDisplayName}({userName})'
+
+    Field-LinkedAccount-User:
+
+      Name: 'リンクされたアカウント'
+
+      # {user}、{userName}、{userDisplayName}、{MinecraftName}を使用できます。
+      Value: '**{MinecraftName}**'
+
+    # {MinecraftName}を使用できます。
+    Title-MCID: '{MinecraftName}'
+
+    Field-LinkedAccount-MCID:
+
+      Name: 'リンクされたアカウント'
+
+      # {user}、{userName}、{userDisplayName}、{MinecraftName}を使用できます。
+      Value: '{user}'
+
+      Value-NotFoundLinkedAccount: 'アカウントはリンクされていません。'
+
+    Field-Balance:
+
+      Name: '残高'
+
+      # {MinecraftName}、{balance}を使用できます。
+      Value: '```{balance}```'
+
+      Value-NotFoundBalance: '残高が見つかりません。'
